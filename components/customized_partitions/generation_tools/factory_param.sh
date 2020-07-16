@@ -35,4 +35,4 @@ LOG_FILE=$(dirname ${TARGET_FOLDER})/factory/factory_parameter.log
 
 echo "generating factory_param.bin($ESP_AT_MODULE_NAME): python $TOOL_PATH -t $TARGET_FOLDER/$PARTITION_NAME.bin $MODULE_FILE"
 
-python $TOOL_PATH --platform $ESP_AT_PROJECT_PLATFORM --module $ESP_AT_MODULE_NAME --bin_name $TARGET_FOLDER/$PARTITION_NAME.bin --define_file $DEFINE_FILE --module_file $MODULE_FILE --log_file $LOG_FILE
+python3 $TOOL_PATH --platform $ESP_AT_PROJECT_PLATFORM --module $ESP_AT_MODULE_NAME --bin_name $TARGET_FOLDER/$PARTITION_NAME.bin --define_file $DEFINE_FILE --module_file $MODULE_FILE --log_file $LOG_FILE

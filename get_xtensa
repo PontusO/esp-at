@@ -1,0 +1,5 @@
+#
+# Source file for xtensa environment setup
+#
+PATH=$PATH:$HOME/esp/xtensa-lx106-elf/bin
+#IDF_PATH=$HOME/esp/ESP8266_RTOS_SDK
