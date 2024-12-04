@@ -40,6 +40,7 @@ static const esp_at_module_info_t esp_at_module_info[] = {
 #if defined(CONFIG_IDF_TARGET_ESP32C3)
     {"MINI-1",         CONFIG_ESP_AT_OTA_TOKEN_ESP32C3_MINI,        CONFIG_ESP_AT_OTA_SSL_TOKEN_ESP32C3_MINI },
     {"ESP32C3-SPI",    NULL,  NULL },   // ESP32C3-SPI
+    {"CHALLENGER_RP2040_WB_UART", NULL, NULL}, // Challenger RP2040 WiFi/BLE
 #endif
 
 #if defined(CONFIG_IDF_TARGET_ESP32C2)
@@ -54,6 +55,7 @@ static const esp_at_module_info_t esp_at_module_info[] = {
 
 #if defined(CONFIG_IDF_TARGET_ESP32C6)
     {"ESP32C6-4MB",    CONFIG_ESP_AT_OTA_TOKEN_ESP32C6_4MB,         CONFIG_ESP_AT_OTA_SSL_TOKEN_ESP32C6_4MB},
+    {"CHALLENGER_RP2350_W6B_UART", NULL, NULL}, // Challenger RP2350 WiFi6/BLE5 (module_challenger_rp2350_w6b_uart_default)
 #endif
 
 #if defined(CONFIG_IDF_TARGET_ESP32S2)
